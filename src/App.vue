@@ -8,7 +8,6 @@
 <script>
 import cnodeHead from './components/cnodeHead.vue';
 
-console.log(cnodeHead);
 export default {
   name: 'app',
   components: {

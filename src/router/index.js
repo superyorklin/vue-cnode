@@ -1,9 +1,9 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Resource from 'vue-resource'
-import Home from '@/components/Home'
-import About from '@/components/About'
-import Contact from '@/components/Contact'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Resource from 'vue-resource';
+import Home from '@/components/Home';
+import User from '@/components/User';
+import Artical from '@/components/Artical';
 
 Vue.use(Router)
 
@@ -15,14 +15,14 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'About',
-      component: About
+      path: '/user/:name',
+      name: 'UserRoute',
+      component: User
     },
     {
-      path: '/contact',
-      name: 'Contact',
-      component: Contact
-    },
+      path: '/artical/:id',
+      name: 'ArticalRoute',
+      component:Artical
+    }
   ]
 })
