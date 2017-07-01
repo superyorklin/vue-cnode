@@ -1,5 +1,5 @@
 <template id="home">
-    <div class="container">
+    <div class="container clear">
         <div class="side"></div>
         <div class="main">
             <div class="cell" v-for="(item,index) in content">
@@ -80,79 +80,5 @@ export default {
 
 }
 </script>
-
-<style>
-.container{
-    width: 90%;
-    min-width: 960px;
-    margin: 15px auto;
-    margin-bottom: 0;
-}
-.side{
-    float: right;
-    width:280px;
-    height: 200px;
-    background: #555;
-}
-.main{
-    margin-right: 305px;
-    border-radius: 5px;
-    background: #fff;
-}
-.cell{
-    padding: 10px 10px 9px 10px;
-    border-bottom: 1px solid #ccc;
-}
-.cell>a{
-    display: inline-block;
-    text-decoration: none;
-}
-.cell img{
-    width: 40px;
-    height: 40px;
-}
-.cell span{
-    text-align: center;
-    display: inline-block;
-    line-height: 40px;
-}
-.reply_visit{
-    display: inline-block;
-    width: 100px;
-    vertical-align: middle;
-    margin-top: -25px;   
-    color: #CDC8B1;
-    font-weight: lighter;
-}
-.reply_visit span{
-    font-size: 14px;
-}
-.tab{
-    line-height: 20px !important;
-    font-size: 14px;
-    vertical-align: top;
-    margin-top: 13px;
-    width: 40px;
-    background: greenyellow;  
-    border-radius: 3px;
-}
-.cell_title{
-    height: 40px;
-    width: 450px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 10px;
-    margin-top: 9px;
-    line-height: 25px !important;
-    font-size: 20px;
-    vertical-align: top;
-    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
-}
-.stuff{
-    float: right;
-    margin-right: 10px;
-}
-</style>
 
 

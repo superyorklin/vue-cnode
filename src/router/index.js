@@ -20,7 +20,7 @@ export default new Router({
       component: User
     },
     {
-      path: '/artical/:id',
+      path: '/topic/:id',
       name: 'ArticalRoute',
       component:Artical
     }
