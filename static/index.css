@@ -186,3 +186,87 @@ span a:hover{
 .reply_content{
   padding: 0 1em;
 }
+.back{
+  padding-left: 1em;
+  background: #eee;
+}
+.back a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #2f2f2f;
+  line-height: 2em;
+}
+.back a:hover{
+  color: #08c;
+  text-decoration: underline;
+}
+.user_introduce{
+  padding: 10px;
+}
+.user_introduce img{
+  width: 40px;
+  height: 40px;
+}
+.user_introduce .user_name{
+  font-size: 14px;
+  color: #08c;
+  margin-left: 10px;
+  vertical-align: top;
+}
+.user_introduce ul{
+  list-style: none;
+  margin: 10px;
+}
+.user_introduce li{
+  padding-bottom: 10px;
+}
+.user_introduce span{
+  vertical-align: top;
+  font-size: 15px;
+  margin-left: 1em;
+}
+li i{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.icon_score{
+  background: url(../src/assets/score.svg);
+  background-size: cover;
+}
+.icon_git{
+    background: url(../src/assets/git.svg);  background-size: cover;
+}
+.icon_regtime{
+    background: url(../src/assets/regtime.svg);  background-size: cover;
+}
+p.title{
+  padding-left: 1em;
+  background: #eee;
+  line-height: 2em;
+}
+.topic_reply img{
+  width: 40px;
+  height: 40px;
+}
+.topic_cell{
+  margin: 10px;
+}
+.topic_img{
+  float: left;
+}
+.topic_cell a{
+  text-decoration: none;
+}
+.topic_cell a:hover{
+  text-decoration: underline;
+}
+.topic_cell p{
+  line-height: 40px;
+  height: 40px;
+  margin-left: 55px;
+  color: #08c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

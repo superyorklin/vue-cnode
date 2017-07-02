@@ -24,6 +24,8 @@ export default {
 
 #app{
   background: #e1e1e1;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 </style>
