@@ -24,30 +24,39 @@
 export default {
   data(){
       return {
-          content: []
+          content: [],
+          limit: 10
       };
   },
   created(){
       this.getData();
   },
   mounted(){
-      var docTitle = document.querySelectorAll(".cell_title");
-      console.log(docTitle);
+      window.addEventListener('scroll',this.scrollMethod);
   },
   methods: {
-      getData(){
-        this.$http({
-            url: 'https://cnodejs.org/api/v1/topics',
-            method: 'get',
-            params: {
-                page: 1,
-                limit: 10,
-                mdrender: 'false'
-            }
-        }).then((res) => {
-            this.content = res.data.data;
-        });
-      }
+    scrollMethod(){
+        const sumH = document.body.scrollHeight;
+        const viewH = document.documentElement.clientHeight;
+        const scrollH = document.body.scrollTop;
+        if (viewH + scrollH === sumH) {
+            this.getData();
+        }   
+    },
+    getData(){
+    this.limit += 10;
+    this.$http({
+        url: 'https://cnodejs.org/api/v1/topics',
+        method: 'get',
+        params: {
+            page: 1,
+            limit: this.limit,
+            mdrender: 'false'
+        }
+    }).then((res) => {
+        this.content = res.data.data;
+    });
+    }
   },
   filters: {
       formatReply: function(value){
